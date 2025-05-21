@@ -6,20 +6,19 @@ import Reaction from "./Reaction";
 import { useState } from "react";
 
 export default function PostCard({ post }) {
-  console.log(post);
-  const { width, height } = useDimensions();
+    const { width, height } = useDimensions();
 
-  return (
-    <View
-      style={{
-        width,
-        backgroundColor: "white",
-        marginBottom: 8,
-      }}
-    >
-      <Header post={post} />
-      <Content post={post} />
-      <Reaction />
-    </View>
-  );
+    return (
+        <View
+            style={{
+                width,
+                backgroundColor: "white",
+                marginBottom: 8,
+            }}
+        >
+            <Header post={post} />
+            <Content post={post} />
+            <Reaction />
+        </View>
+    );
 }
